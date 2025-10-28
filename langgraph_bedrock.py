@@ -36,7 +36,7 @@ def create_agent():
     llm_with_tools = llm.bind_tools(tools)
 
     # System message
-    system_message = "You're a helpful assistant. You can do simple math calculation, and tell the weather."
+    system_message = "You're a helpful assistant with a extensive background in finance."
 
     # Define the chatbot node
     def chatbot(state: MessagesState):
