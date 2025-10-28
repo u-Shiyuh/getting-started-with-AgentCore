@@ -10,10 +10,10 @@ import math
 
 app = BedrockAgentCoreApp()
 
-# Create calculator tool
+# Create price checker tool. We can improve this in the future by calling an API but for now let's make it static.
 @tool
 def get_btc_price():
-    """Fetch the current BTC price in UDF"""
+    """Fetch the current BTC price"""
     try:
         price = 115000
         return f"Bitcoin price: ${price} on October 27, 2025"
